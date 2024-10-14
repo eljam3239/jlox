@@ -22,7 +22,7 @@ public class Lox {
 }
 private static void runFile(String path) throws IOException {
     byte[] bytes = Files.readAllBytes(Paths.get(path));
-    run(new String(bytes, Charset.defaultCharset());
+    run(new String(bytes, Charset.defaultCharset()));
 }
 
 private static void runPrompt() throws IOException {

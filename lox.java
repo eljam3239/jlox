@@ -1,4 +1,4 @@
-package com.craftinginterpreters.lox;
+//package com.craftinginterpreters.lox;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -19,4 +19,8 @@ public class Lox {
             runPrompt();
         }
     }
+}
+private static void runFile(String path) throws IOException {
+    byte[] bytes = Files.readAllBytes(Paths.get(path));
+    run(new String(bytes, Charset.defaultCharset());
 }
